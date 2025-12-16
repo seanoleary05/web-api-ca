@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import usersRouter from './api/users';
+import moviesRouter from './api/movies'; 
 import authenticate from './authenticate';
 
 
@@ -42,6 +43,9 @@ app.use(express.json());
 
 //Users router
 app.use('/api/users', usersRouter);
+
+//Movies Router 
+app.use('/api/movies', moviesRouter); 
 
 
 
