@@ -21,6 +21,7 @@ import StartPage from "./pages/startPage";
 import ProfilePage from "./pages/profilePage";
 import AuthContextProvider from "./contexts/authContext";
 import ProtectedRoutes from "./protectedRoutes";
+import '../App.css'
 
 
 
@@ -60,7 +61,8 @@ const App = () => {
         <Route path="/movies/top-rated" element={<TopRatedMoviesPage/>}/>
         <Route path="/movies/popular" element={<PopularMoviesPage/>}/>
         <Route path ="login" element={<LoginPage/>} />
-        
+        <Route path ="signup" element={<SignupPage/>}/>
+
         
       </Routes>
       </MoviesContextProvider>
