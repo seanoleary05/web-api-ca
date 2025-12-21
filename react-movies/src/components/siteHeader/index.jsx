@@ -132,15 +132,21 @@ const Header = () => {
   return (
     <header className="site-header">
     <div className="left-section">
-      <Link to="/" className="home-link">Tasky</Link>
+      <Link to="/" className="home-link">Movie App</Link>
       <nav className="nav-links">
         {context.isAuthenticated ? (
           <>
-            <Link to="/tasks">Tasks</Link>
-            <Link to="/profile">Profile</Link>
+            <Link to="/">Movies</Link>
+            <Link to="movies/trending/today">Today's Trending</Link>
+            <Link to="/movies/top-rated">Top Rated All Time</Link>
+            <Link to="/movies/popular">Popular</Link>
+            
+
+            
           </>
         ) : (
           <>
+            <Link to="/">Main Page</Link>
             <Link to="/login">Login</Link>
             <Link to="/signup">Signup</Link>
           </>
